@@ -10,7 +10,6 @@ main = do
   args <- getArgs
   input <- readFile . head $ args
   let (list1, list2) = (rearrange . map (map read . words . filter (/= '\r')) . lines $ input) :: ([Int],[Int])
-  --let entries = (map sum . map (map read) . filter (/= [""]) . groupBy (\x y -> (not . null $ x) && (not . null $ y)) . map (filter (/= '\r')) . lines $ input) :: [Int]
   putStrLn . show . sum $ zipWith (\x y -> abs(x - y)) (sort list1) (sort list2)
 
 -- | Rearrange the lists
