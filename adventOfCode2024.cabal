@@ -41,3 +41,15 @@ Executable day02p2
   main-is: day02p2.hs
   build-depends: base
   hs-source-dirs: src
+
+Executable day03p1
+  buildable: True
+  main-is: day03p1.hs
+  build-depends: base, parsec
+  hs-source-dirs: src
+
+Executable day03p2
+  buildable: True
+  main-is: day03p2.hs
+  build-depends: base, parsec
+  hs-source-dirs: src
