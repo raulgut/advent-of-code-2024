@@ -65,3 +65,9 @@ Executable day04p2
   main-is: day04p2.hs
   build-depends: base, matrix
   hs-source-dirs: src
+
+Executable day05p1
+  buildable: True
+  main-is: day05p1.hs
+  build-depends: base, parsec
+  hs-source-dirs: src
